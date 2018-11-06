@@ -8,11 +8,7 @@ Vue.use(Router)
 
 //业务路由
 export const businessRouter = [
-	{
-	  path: '/HelloWorld',
-	  name: 'HelloWorld',
-	  component: HelloWorld
-	}
+	
 ];
 
 //基础路由
