@@ -6,10 +6,7 @@ const _import = require('./_import_' + process.env.NODE_ENV);
 Vue.use(Router)
 
 
-//业务路由
-export const businessRouter = [
-	
-];
+
 
 //基础路由
 export const baseRouter = [
@@ -25,8 +22,13 @@ export const baseRouter = [
 			}
 	  ]
 	}
-].concat(businessRouter);
+]
+
+//业务路由
+export const businessRouter = [
+	
+].concat(baseRouter);
 
 export default new Router({
-	routes: baseRouter
+	routes: businessRouter
 });
