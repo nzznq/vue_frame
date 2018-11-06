@@ -1,6 +1,6 @@
 <template>
 	<div class="page">
-		git
+		git123456
 	</div>
 </template>
 <script type="text/javascript">
