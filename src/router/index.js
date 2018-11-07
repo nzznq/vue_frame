@@ -11,16 +11,21 @@ Vue.use(Router)
 //基础路由
 export const baseRouter = [
 	{
-	  path: '/',
-	  name: 'example-main',
-	  component: _import('example/main/index'),
-	  children:[
-	  	{
+		path: '/',
+		name: 'example-main',
+		component: _import('example/main/index'),
+		children:[
+			{
 				path: '/',
 				name: 'git',
 				component: _import('example/git/git')
+			},
+			{
+				path: '/api',
+				name: 'api',
+				component: _import('example/api/api')
 			}
-	  ]
+		]
 	}
 ]
 
