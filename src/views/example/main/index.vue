@@ -68,6 +68,17 @@ export default{
 				z-index: 1;
 				background: linear-gradient(to right, #1b24ff, #fd0371 , deepskyblue , darkmagenta);
 			}
+			&:before {  
+			    content: "";  
+			    position: absolute;  
+			    width: 8%;  
+			    height: 1px;  
+			    bottom: 0;  
+			    left: 0px;  
+			    background: linear-gradient(to right, transparent, white , transparent);
+			    z-index: 10;
+			    animation:myfirst1 8s linear 0.1s infinite normal;
+			}  
 			.nav{
 				width: 1200px;
 				height: 100%;
@@ -87,7 +98,6 @@ export default{
 		}
 		.example-content{
 			background: #f9f9f9;
-			
 			flex: 1;
 			/*overflow-y: auto;*/
 			.content{
@@ -126,6 +136,11 @@ export default{
 				}
 			}
 		}
+	}
+	@keyframes myfirst1
+	{
+		from {left: 0px;}
+		to {left: 90%;}
 	}
 </style>
 
