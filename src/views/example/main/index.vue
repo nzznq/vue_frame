@@ -6,7 +6,7 @@
 			</ul>
 		</div>
 		<div class="example-content">
-			<div class="content" >
+			<div class="content" v-bind:class="{'full-content': fullContent}">
 				<ul class="sidebar">
 					<li v-for="item in secondMenu" >{{item.name}}</li>
 				</ul>
@@ -22,6 +22,7 @@ export default{
 	name: 'example-main',
 	data(){
 		return {
+			fullContent: true,
 			navMenu:[
 				{name:'git',url:'/',children:[]},
 				{name:'API',url:'/api',children:[
@@ -37,10 +38,12 @@ export default{
 	methods:{
 		clickMenu(res){
 			this.secondMenu = res.children;
-			if(res.children){
-				
+			if(res.children.length > 0){
+				this.fullContent = false;
+			}else{
+				this.fullContent = true;
 			}
-			this.$router.push(res.url)
+			this.$router.push(res.url);
 		}
 	},
 	mounted(){
@@ -83,10 +86,13 @@ export default{
 			}
 		}
 		.example-content{
-			padding-top: 15px;
+			background: #f9f9f9;
+			
 			flex: 1;
 			/*overflow-y: auto;*/
 			.content{
+				padding-top: 15px;
+				background: #fff;
 				margin: 0 auto;
 				width: 1200px;
 				height:100%;
@@ -95,8 +101,9 @@ export default{
 					width: 200px;
 					height: 100%;
 					border-right: 1px solid #ccc;
+					padding: 0px 15px;
 					li{
-						padding: 5px 5px;
+						padding: 5px 0px;
 						cursor: pointer;
 						&:hover{
 							color: #00BFFF;
@@ -106,6 +113,7 @@ export default{
 				.main{
 					float: left;
 					width: 1000px;
+					padding: 0px 15px;
 				}
 			}
 			.full-content{
