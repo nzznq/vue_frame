@@ -28,7 +28,7 @@ export default{
 				{name:'API',url:'/api',children:[
 					{name:'按钮',url:'/'},
 					{name:'输入框',url:'/'},
-					{name:'表格',url:'/'}
+					{name:'表格',url:''}
 				]},
 				{name:'示例页面',url:'',children:[]}
 			],
@@ -90,6 +90,7 @@ export default{
 				.nav-list{
 					padding: 0px 15px;
 					cursor: pointer;
+					font-size: 16px; 
 					&:hover{
 						color: #00BFFF;
 					}
