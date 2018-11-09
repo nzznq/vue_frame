@@ -22,8 +22,8 @@ export default{
 	created(){
 		console.log(this.src);
 		var liu = '../../../assets/git/git_01.png';
-		var url = require(this.src);
-		this.url = url;
+//		var url = require(this.src);
+//		this.url = url;
 	},
 	methods:{
 		draw(){

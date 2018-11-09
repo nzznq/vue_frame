@@ -21,13 +21,12 @@
 				</lw-link>
 			</lw-words>
 			<lw-words>安装完成后，在开始菜单里找到“Git”->“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！</lw-words>
-			<lw-pic src="../../../assets/git/git_01.png"></lw-pic>
+			<!--<lw-pic src="../../../assets/git/git_01.png"></lw-pic>-->
 		</lw-panel>
 	
 		<lw-panel title="三、创建版本库">
 			
 		</lw-panel>
-		
 		
 	</div>
 </template>
@@ -38,10 +37,22 @@ export default{
 		return {
 			
 		}
+	},
+	methods:{
+		draw(){
+			
+		}
+	},
+	mounted(){
+		this.draw();
 	}
 }
 </script>
 <style scoped="scoped" lang="scss">
-	
+	.lw-code{
+		.lw-pre{
+			
+		}
+	}
 </style>
 
