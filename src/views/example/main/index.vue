@@ -24,7 +24,7 @@ export default{
 		return {
 			fullContent: true,
 			navMenu:[
-				{name:'git',url:'/',children:[]},
+				{name:'Git使用',url:'/',children:[]},
 				{name:'API',url:'/api',children:[
 					{name:'按钮',url:'/'},
 					{name:'输入框',url:'/'},

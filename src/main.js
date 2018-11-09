@@ -7,8 +7,14 @@ import router from './router'
 //公共样式文件
 import '@/styles/index.scss'
 
-Vue.config.productionTip = false
+import components from './components/common'
+//注册全局自定义组件
+components.map(component => {
+	Vue.component(component.name, component);
+});
 
+
+Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
