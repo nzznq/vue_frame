@@ -49,10 +49,6 @@ export default{
 }
 </script>
 <style scoped="scoped" lang="scss">
-	.lw-code{
-		.lw-pre{
-			
-		}
-	}
+	
 </style>
 
