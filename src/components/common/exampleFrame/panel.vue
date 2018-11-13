@@ -1,5 +1,7 @@
 <template>
-	<div class="lw-box">
+	<div class="lw-box" 
+		:class="[this.title ? '': 'no-padding']"
+		>
 		<div class="lw-box-title">{{this.title}}</div>
 		<div class="lw-box-body">
 			<slot></slot>
@@ -38,10 +40,17 @@ export default{
 	.lw-box{
 		margin-bottom: 20px;
 		.lw-box-title{
-			font-size: 18px;
+			font-size: 19px;
+			color: #666;
 		}
 		.lw-box-body{
-			padding: 10px 35px;
+			padding: 10px 40px;
+			font-size: 15px;
+		}
+	}
+	.no-padding{
+		.lw-box-body{
+			padding: 10px 0px;
 			font-size: 15px;
 		}
 	}

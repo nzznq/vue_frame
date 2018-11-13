@@ -1,6 +1,6 @@
 <template>
 	<div class="page">
-		api
+		组件
 	</div>
 </template>
 <script type="text/javascript">

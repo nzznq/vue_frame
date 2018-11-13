@@ -24,8 +24,22 @@ export const baseRouter = [
 				path: '/api',
 				name: 'api',
 				component: _import('example/api/api')
+			},
+			{
+				path: '/npm',
+				name: 'npm',
+				component: _import('example/npm/npm')
+			},
+			{
+				path: '/common',
+				name: 'common',
+				component: _import('example/common/common')
 			}
 		]
+	},{
+		path: '/test',
+		name: 'test',
+		component: _import('test/test')
 	}
 ]
 

@@ -1,11 +1,11 @@
 <template>
-	<div class="lw-subtitle">
-		<slot></slot>
+	<div class="page">
+		npm
 	</div>
 </template>
 <script type="text/javascript">
 export default{
-	name: 'lw-subtitle',
+	name: 'npm',
 	data(){
 		return {
 			
@@ -14,10 +14,6 @@ export default{
 }
 </script>
 <style scoped="scoped" lang="scss">
-	.lw-subtitle{
-	    padding: 5px 0px;
-		font-size: 17px;
-		color: #666;
-	}
+	
 </style>
 

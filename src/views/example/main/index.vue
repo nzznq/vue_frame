@@ -25,12 +25,13 @@ export default{
 			fullContent: true,
 			navMenu:[
 				{name:'Git使用',url:'/',children:[]},
-				{name:'API',url:'/api',children:[
+				{name:'npm包开发',url:'/npm',children:[]},
+				{name:'组件',url:'/api',children:[
 					{name:'按钮',url:'/'},
 					{name:'输入框',url:'/'},
 					{name:'表格',url:''}
 				]},
-				{name:'示例页面',url:'',children:[]}
+				{name:'公共方法',url:'/common',children:[]}
 			],
 			secondMenu:[]
 		}
@@ -124,7 +125,7 @@ export default{
 				.main{
 					float: left;
 					width: 1000px;
-					padding: 0px 15px;
+					padding: 0px 20px;
 				}
 			}
 			.full-content{
