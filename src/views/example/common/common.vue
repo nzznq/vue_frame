@@ -14,33 +14,30 @@
 		</lw-panel>
 		<lw-panel title="二、方法">
 			
-<el-table
-  :data="tableData"
-  style="width: 100%">
-  
-	<el-table-column
-		prop="mothod"
-		label="方法"
-		width="200"
-		>
-	</el-table-column>
-	<el-table-column
-		prop="explain"
-		label="说明"
-		
-		>
-	</el-table-column>
-	<el-table-column
-		prop="param"
-		label="参数"
-		
-		>
-	</el-table-column>
-	
-</el-table>
-
-
-
+			<el-table
+			  :data="tableData"
+			  style="width: 100%">
+			  
+				<el-table-column
+					prop="mothod"
+					label="方法"
+					width="200"
+					>
+				</el-table-column>
+				<el-table-column
+					prop="explain"
+					label="说明"
+					
+					>
+				</el-table-column>
+				<el-table-column
+					prop="param"
+					label="参数"
+					
+					>
+				</el-table-column>
+				
+			</el-table>
 
 		</lw-panel>
 	</div>

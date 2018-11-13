@@ -11,6 +11,13 @@
 					廖雪峰博客
 				</lw-link>
 			</lw-words>
+			
+			<lw-code>
+				function liu() {
+					console.log(123456);
+				}
+			</lw-code>
+			
 		</lw-panel>
 	
 		<lw-panel title="二、安装Git">

@@ -1,5 +1,5 @@
 <template>
-<pre data-title="examples">
+<pre data-type="default" data-title="examples">
 <slot></slot>	
 </pre>
 </template>
