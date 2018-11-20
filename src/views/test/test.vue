@@ -14,9 +14,6 @@ export default{
 		}
 	},
 	mounted() {
-		let Fun = com.getCountdown
-		let result = Fun('2018/12/30 :00')
-		console.log(result)
 	},
 }
 </script>
