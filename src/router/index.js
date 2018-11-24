@@ -16,22 +16,26 @@ export const baseRouter = [
 		component: _import('example/main/index'),
 		children:[
 			{
-				path: '/',
+				path:'/',
+				redirect:'/common'
+			},
+			{
+				path: 'git',
 				name: 'git',
 				component: _import('example/git/git')
 			},
 			{
-				path: '/api',
+				path: 'api',
 				name: 'api',
 				component: _import('example/api/api')
 			},
 			{
-				path: '/npm',
+				path: 'npm',
 				name: 'npm',
 				component: _import('example/npm/npm')
 			},
 			{
-				path: '/common',
+				path: 'common',
 				name: 'common',
 				component: _import('example/common/common')
 			}
@@ -49,5 +53,6 @@ export const businessRouter = [
 ].concat(baseRouter);
 
 export default new Router({
+	linkActiveClass:"check", //路由激活类名
 	routes: businessRouter
 });
