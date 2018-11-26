@@ -78,7 +78,7 @@ const isFunction = function (obj) {
  */
 const isMobileNum = function (num) {
 	let reg = /^[1][3,4,5,7,8][0-9]{9}$/;
-	return reg.test(num)
+	return reg.test(num);
 };
 
 /**
@@ -92,7 +92,7 @@ const getCurrentTime = function (formatStr) {
 	let parseNumber = function (num) {
 		return num < 10 ? "0" + num : num;
 	};
-	let dateTime = new Date()
+	let dateTime = new Date();
 	let dateObj = {};
 	let rStr = /\{([^}]+)\}/;
 	let mons = ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二'];
@@ -126,7 +126,7 @@ const getCurrentTime = function (formatStr) {
 const getCountdown = function (endtime) {//time是结束时间
 	let startDate = new Date(); //开始时间，当前时间
 	let endDate = new Date(endtime); //结束时间，需传入时间参数
-	let leftTime = endDate.getTime() - startDate.getTime()
+	let leftTime = endDate.getTime() - startDate.getTime();
 	let leftsecond = parseInt(leftTime / 1000);//剩余秒数
 	let day = Math.floor(leftsecond / (60 * 60 * 24));//剩余天数
 	let hour = Math.floor((leftsecond - day * 24 * 60 * 60) / 3600);//剩余小时
@@ -136,9 +136,9 @@ const getCountdown = function (endtime) {//time是结束时间
 	hour = checkTime(hour);
 	minute = checkTime(minute);
 	second = checkTime(second);
-	let str = ''
+	let str = '';
 	if(isNaN(day)){
-		str = "请传入正确的时间格式，例如 '2019/01/01 10:00:00' "
+		str = "请传入正确的时间格式，例如 '2019/01/01 10:00:00' ";
 	}else{
 		str = day + "天" + hour + "时" + minute + "分" + second + "秒";
 	}
@@ -164,7 +164,7 @@ const randomNum = function (minNum,maxNum,count,repeat) {
 	repeat = repeat ? repeat : true;    //获取到的随机数是否可以重复   默认 可以重复
 	let numArr = [];
 	for(let i=0;numArr.length < count;i++){
-		let num = Math.floor(Math.random()*(maxNum-minNum+1)+minNum)
+		let num = Math.floor(Math.random()*(maxNum-minNum+1)+minNum);
 		switch (repeat) {
 			case true:
 				numArr.push(num)
@@ -177,10 +177,8 @@ const randomNum = function (minNum,maxNum,count,repeat) {
 			default:
 				break;
 		}
-		
 	}
-		
-	return numArr
+	return numArr;
 }
 
 
@@ -191,18 +189,9 @@ export {
 	isMobileNum,
 	getCurrentTime,
 	getCountdown,
-	randomNum,
+	randomNum
 }
 
-export default {
-	isFunction,
-	getUrlParam,
-	isNull,
-	isMobileNum,
-	getCurrentTime,
-	getCountdown,
-	randomNum,
-};
 
 
 

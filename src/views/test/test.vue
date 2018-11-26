@@ -4,7 +4,7 @@
 	</div>
 </template>
 <script type="text/javascript">
-import com from '@/components/npm/methods/index.js'
+import {getUrlParam} from '@/components/npm/methods/index.js'
 
 export default{
 	name: 'test',
@@ -14,6 +14,7 @@ export default{
 		}
 	},
 	mounted() {
+		console.log(getUrlParam());
 	},
 }
 </script>

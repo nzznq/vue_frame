@@ -8,8 +8,7 @@
 			<lw-subtitle>2. 引入模块</lw-subtitle>
 			<lw-words>在使用本方法的vue页面中，任选一种方式引入模块</lw-words>
 			<lw-code>
-				import {方法名字,方法名字} from 'lwcommon' 或者
-				import common from 'lwcommon' 	//调用时 common.方法名()
+				import {方法名,方法名} from 'lwcommon' 
 			</lw-code>
 		</lw-panel>
 		<lw-panel title="二、方法">
@@ -33,7 +32,6 @@
 				<el-table-column
 					prop="param"
 					label="参数"
-					
 					>
 				</el-table-column>
 				
