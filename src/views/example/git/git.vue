@@ -46,7 +46,7 @@
 		<lw-panel title="五、从远程库克隆、提交代码">
 			<lw-code>
 				$ git remote add origin 远程库路径	//连接远程库
-				$ git clone 					//克隆代码
+				$ git clone 远程库路径				//克隆代码
 				$ git push -u origin master     //把代码提交到远程库上面
 				
 				$ git remote -v					//显示所连接的克隆地址
