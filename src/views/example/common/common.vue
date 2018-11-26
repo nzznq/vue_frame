@@ -52,11 +52,11 @@ export default{
 	          }, {
 	            mothod: 'isNull',
 	            explain: '判断是否为空，空返回true，不为空返回false',
-	            param: '判断数据'
+	            param: '判断的数据'
 	          },{
 	            mothod: 'isFunction',
 	            explain: '判断是否为方法，是true，否false',
-	            param: '判断数据'
+	            param: '判断的数据'
 	          }
 	          ],
 			
