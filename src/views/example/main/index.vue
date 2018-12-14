@@ -137,9 +137,10 @@
 		.head_fixed{
 			width: 100%;
 			position: fixed;
-			top: 0px;
+			top: -50px;
 			margin: auto;
 			background: white;
+			animation: headFixed .3s linear forwards;
 		}
 		.example-content {
 			background: #f9f9f9;
@@ -225,9 +226,16 @@
 		from {
 			left: 0px;
 		}
-
 		to {
 			left: 90%;
+		}
+	}
+	@keyframes headFixed {
+		from {
+			top: -50px;
+		}
+		to {
+			top: 0px;
 		}
 	}
 </style>
