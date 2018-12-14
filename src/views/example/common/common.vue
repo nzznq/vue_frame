@@ -61,7 +61,23 @@ export default{
 	            mothod: 'deepObjectMerge(obj,obj)',
 	            explain: '深度合并对象',
 	            param: 'obj 对象,两个对象相同key值不同value的，后一个对象覆盖前一个对象的value'
-	          }
+	          },{
+	            mothod: 'isMobileNum(num)', 
+	            explain: '判断是否为手机号，是true，否false',
+	            param: 'num 要判断的数字或者字符串'
+	          },{
+	            mothod: 'getCurrentTime(formatStr)',
+	            explain: '以提供的格式获取当前时间',
+							param: 'formatStr 想要获取的时间格式字符串 ， 例如：“{Y}-{MM}-{DD} {hh}:{ii}:{ss}” 其中 Y M D h i s 分别表示 年 月 日 时 分 秒  格式可以自由搭配'
+	          },{
+							mothod:'getCountdown(endtime)',
+							explain: '倒计时 获取剩余时间 ',
+							param: 'endtime 结束时间(string)  例如： "2019/01/01 10:00:00" '
+						},{
+							mothod:'randomNum(min,max,count)',
+							explain: '生成随机数 ',
+							param: 'min 每位最小值， max 每位最大值， count 随机数位数 '
+						}
 	          ]
 		}
 	}
