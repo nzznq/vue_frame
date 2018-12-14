@@ -155,23 +155,23 @@ const getCountdown = function (endtime) {//time是结束时间
  * 生成随机数
  * @param number 随机数范围/数量
  * @returns array
- * @example randomNum(10,20,5)     // 11 15 17 16 20
+ * @example randomNum(10,20,5)     // 11151
  */
 const randomNum = function (minNum,maxNum,count,repeat) {
 	minNum = minNum ? minNum : 0;	//范围最小值
 	maxNum = maxNum ? maxNum : 10;  //范围最大值
-	count = count ? count : 1;   //获取随机数的个数
+	count = count ? count : 1;   //获取随机数的位数
 	repeat = repeat ? repeat : true;    //获取到的随机数是否可以重复   默认 可以重复
-	let numArr = [];
+	let numArr = "";
 	for(let i=0;numArr.length < count;i++){
 		let num = Math.floor(Math.random()*(maxNum-minNum+1)+minNum);
 		switch (repeat) {
 			case true:
-				numArr.push(num)
+				numArr += num;
 				break;
 			case false:
 				if(numArr.indexOf(num) == -1){
-					numArr.push(num)
+					numArr += num;
 				}
 				break
 			default:
@@ -179,6 +179,20 @@ const randomNum = function (minNum,maxNum,count,repeat) {
 		}
 	}
 	return numArr;
+}
+
+/**
+ * 深度合并对象
+ * @param FirstOBJ 第一个对象
+ * @param SecondOBJ 第二个对象
+ * @returns object 后一个对象与前一个对象合并，值不一样的覆盖
+ */
+const deepObjectMerge = function (FirstOBJ, SecondOBJ) {
+    for (var key in SecondOBJ) {
+        FirstOBJ[key] = FirstOBJ[key] && FirstOBJ[key].toString() === "[object Object]" ?
+            deepObjectMerge(FirstOBJ[key], SecondOBJ[key]) : FirstOBJ[key] = SecondOBJ[key];
+    }
+    return FirstOBJ;
 }
 
 
@@ -189,7 +203,8 @@ export {
 	isMobileNum,
 	getCurrentTime,
 	getCountdown,
-	randomNum
+	randomNum,
+	deepObjectMerge
 }
 
 

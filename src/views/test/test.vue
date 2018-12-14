@@ -4,8 +4,7 @@
 	</div>
 </template>
 <script type="text/javascript">
-import {getUrlParam} from '@/components/npm/methods/index.js'
-
+import {getUrlParam , deepObjectMerge} from '@/components/npm/methods/index.js'
 export default{
 	name: 'test',
 	data(){
@@ -14,7 +13,20 @@ export default{
 		}
 	},
 	mounted() {
-		console.log(getUrlParam());
+		let a = {
+			b:1,
+			c:{
+				d:666
+			}
+		};
+		let b = {
+			c: {
+				d: 666
+			}
+		};
+		let liu = deepObjectMerge(a,b);
+		console.log(liu);
+		
 	},
 }
 </script>

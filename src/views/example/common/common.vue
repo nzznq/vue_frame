@@ -46,20 +46,23 @@ export default{
 	data(){
 		return {
 			tableData:[{
-	            mothod: 'getUrlParam',
+	            mothod: 'getUrlParam(url)',
 	            explain: '获取URL参数，获取的参数以对象形式返回',
-	            param: 'url访问地址，不传默认为当前页面地址'
+	            param: 'url地址，不传默认为当前页面地址'
 	          }, {
-	            mothod: 'isNull',
+	            mothod: 'isNull(data)',
 	            explain: '判断是否为空，空返回true，不为空返回false',
-	            param: '判断的数据'
+	            param: 'data判断的数据'
 	          },{
-	            mothod: 'isFunction',
-	            explain: '判断是否为方法，是true，否false',
-	            param: '判断的数据'
+	            mothod: 'isFunction(fn)',
+	            explain: '判断是否为function，是true，否false',
+	            param: 'fn判断的function'
+	          },{
+	            mothod: 'deepObjectMerge(obj,obj)',
+	            explain: '深度合并对象',
+	            param: 'obj 对象,两个对象相同key值不同value的，后一个对象覆盖前一个对象的value'
 	          }
-	          ],
-			
+	          ]
 		}
 	}
 }
