@@ -58,7 +58,18 @@
 			<lw-subtitle>2. 发布：<i>npm publish</i></lw-subtitle>
 			<lw-subtitle>3. 删除：<i>npm --force unpublish 包名称</i></lw-subtitle>
 		</lw-panel>
-		
+		<lw-panel title="五、发布遇到的问题">
+			<lw-subtitle>1. 问题一：</lw-subtitle>
+			<lw-code>
+				npm ERR! no_perms Private mode enable, only admin can publish this module:
+			</lw-code>
+			<lw-words>
+				这里注意的是因为国内网络问题，许多小伙伴把npm的镜像代理到淘宝或者别的地方了，这里要设置回原来的镜像。
+			</lw-words>
+			<lw-code>
+				npm config set registry=http://registry.npmjs.org
+			</lw-code>
+		</lw-panel>
 	</div>
 </template>
 <script type="text/javascript">
