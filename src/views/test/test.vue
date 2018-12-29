@@ -1,6 +1,7 @@
 <template>
 	<div class="page">
-		ceshite
+		<lw-btn>测试按钮</lw-btn>
+		<lw-btn size="lg" color="warning">测试按钮</lw-btn>
 	</div>
 </template>
 <script type="text/javascript">
@@ -13,20 +14,7 @@ export default{
 		}
 	},
 	mounted() {
-		let a = {
-			b:1,
-			c:{
-				d:666
-			}
-		};
-		let b = {
-			c: {
-				d: 666
-			}
-		};
-		let liu = deepObjectMerge(a,b);
-		console.log(liu);
-		
+		debugger
 	},
 }
 </script>

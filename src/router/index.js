@@ -35,6 +35,11 @@ export const baseRouter = [
 				path: 'common',
 				name: 'common',
 				component: _import('example/common/common')
+			},
+			{
+				path: 'project',
+				name: 'project',
+				component: _import('example/project/project')
 			}
 		]
 	},{

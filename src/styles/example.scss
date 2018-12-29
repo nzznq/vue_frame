@@ -2,10 +2,14 @@
 .page{
     height: 100%;
     font-family: "arial, helvetica, sans-serif";
+    padding-bottom: 30px;
 }
 
 .lw-box{
     img{
         margin: 8px 10px;
     }
+}
+.lw-subtitle + .lw-words {
+    padding: 0px 20px !important;
 }

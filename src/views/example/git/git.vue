@@ -22,7 +22,7 @@
 			</lw-words>
 			<lw-words>安装完成后，在开始菜单里找到“Git”->“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！</lw-words>
 			<!--<lw-pic src="../../../assets/git/git_01.png"></lw-pic>-->
-			<img src="../../../assets/git/git_01.png" alt="" />
+			<img :src="require('./img/git_01.png')" alt="" />
 		</lw-panel>
 	
 		<lw-panel title="三、创建本地版本库">
@@ -77,12 +77,10 @@ export default{
 		}
 	},
 	methods:{
-		draw(){
-			
-		}
+		
 	},
 	mounted(){
-		this.draw();
+		
 	}
 }
 </script>

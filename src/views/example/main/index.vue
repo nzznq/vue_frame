@@ -27,6 +27,7 @@
 			return {
 				fullContent: true,
 				navMenu: [
+					{ name: '项目模板', url: '/project', children: [] },
 					{ name: 'Git使用', url: '/git', children: [] },
 					{ name: 'npm包开发', url: '/npm', children: [] },
 					{
@@ -139,6 +140,7 @@
 			margin: auto;
 			background: white;
 			animation: headFixed .3s linear forwards;
+		    z-index: 100;
 		}
 		.example-content {
 			background: #f9f9f9;
