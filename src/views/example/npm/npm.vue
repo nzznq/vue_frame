@@ -25,7 +25,7 @@
 				/**
 				 * 验证手机号
 				 * @param phone 手机号
-				 * @returns boolean
+				 * @return boolean
 				 */
 				
 				const checkPhone = function(phone){
@@ -58,7 +58,7 @@
 			<lw-subtitle>2. 发布：<i>npm publish</i></lw-subtitle>
 			<lw-subtitle>3. 删除：<i>npm --force unpublish 包名称</i></lw-subtitle>
 		</lw-panel>
-		<lw-panel title="五、发布遇到的问题">
+		<lw-panel title="五、发布常见问题">
 			<lw-subtitle>1. 问题一：</lw-subtitle>
 			<lw-code>
 				npm ERR! no_perms Private mode enable, only admin can publish this module:

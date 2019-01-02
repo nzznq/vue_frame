@@ -20,7 +20,7 @@
 				<el-table-column
 					prop="mothod"
 					label="方法"
-					width="200"
+					width="260"
 					>
 				</el-table-column>
 				<el-table-column

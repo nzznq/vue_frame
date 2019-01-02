@@ -13,7 +13,9 @@
 					<li v-for="item in secondMenu">{{item.name}}</li>
 				</ul>
 				<div class="main">
-					<router-view />
+					<keep-alive>
+						<router-view />
+					</keep-alive>
 				</div>
 			</div>
 		</div>
