@@ -29,7 +29,7 @@
 			return {
 				fullContent: true,
 				navMenu: [
-					{ name: '项目模板', url: '/project', children: [] },
+					{ name: '模板', url: '/project', children: [] },
 					{ name: 'Git使用', url: '/git', children: [] },
 					{ name: 'npm包开发', url: '/npm', children: [] },
 					{

@@ -20,10 +20,6 @@ Vue.use(ElementUI);
 Vue.config.productionTip = false
 
 
-import button from './components/npm/button/index.js'
-
-Vue.use(button);
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
